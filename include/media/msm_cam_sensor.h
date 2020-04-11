@@ -107,6 +107,11 @@ struct msm_camera_i2c_seq_reg_setting32 {
 	uint16_t delay;
 };
 
+/* Add-BEGIN by xiaoming.hu@tcl.com OTP dev*/	
+#define VIDIOC_MSM_SENSOR_GET_OTP_STATUS \
+	_IOWR('V', BASE_VIDIOC_PRIVATE + 12, uint32_t)	
+/* Add-END by xiaoming.hu@tcl.com end*/
+
 struct msm_camera_i2c_reg_setting32 {
 	compat_uptr_t reg_setting;
 	uint16_t size;
