@@ -13517,7 +13517,7 @@ static int hdd_driver_init( void)
 
    vos_wake_lock_init(&wlan_wake_lock, "wlan");
 
-   pr_info("%s: loading driver v%s\n", WLAN_MODULE_NAME,
+   pr_err("%s: loading driver v%s\n", WLAN_MODULE_NAME,
            QWLAN_VERSIONSTR TIMER_MANAGER_STR MEMORY_DEBUG_STR);
 
 #ifdef ANI_BUS_TYPE_PCI
